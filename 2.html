@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>happy birthday fav person saya</title>
+  <style>
+    body {
+      background: url('image/background.jpeg') no-repeat center center fixed;
+  background-size: cover; /* fills the screen */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Georgia, serif;
+      text-align: center;
+      margin: 0;
+      cursor: pointer;
+      padding: 20px;
+    }
+
+    .birthday-container {
+      display: inline-block; /* so texts and images move together */
+    }
+
+    h1, h2, h3, p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 5vw;
+      color: #ffc107;
+        text-shadow: 
+    2px 2px 0 #000,  /* bottom-right shadow */
+   -2px 2px 0 #000,  /* bottom-left shadow */
+    2px -2px 0 #000, /* top-right shadow */
+   -2px -2px 0 #000; /* top-left shadow */
+    }
+
+    h2 {
+      font-size: 3vw;
+      color: #FEFEE7;
+      margin-top: 10px;
+       text-shadow: 
+    2px 2px 0 #000,  /* bottom-right shadow */
+   -2px 2px 0 #000,  /* bottom-left shadow */
+    2px -2px 0 #000, /* top-right shadow */
+   -2px -2px 0 #000; /* top-left shadow */
+    }
+
+    p {
+      font-size: 1vw;
+      color: #3333ff;
+      margin-top: 30px;
+      2px 2px 0 #000,  /* bottom-right shadow */
+   -2px 2px 0 #000,  /* bottom-left shadow */
+    2px -2px 0 #000, /* top-right shadow */
+   -2px -2px 0 #000; /* top-left shadow */
+    }
+
+    .z-text {
+      transform: rotateX(5deg) rotateY(-5deg);
+      transition: transform 1s;
+    }
+
+    [data-z]:hover .z-text {
+      transform: rotateX(-5deg) rotateY(5deg);
+    }
+
+    .z-layer:not(:first-child) {
+      color: #bf9105;
+    }
+
+    /* Image styles */
+    .birthday-img {
+      max-width: 250px;       /* larger main image */
+      height: auto;
+      margin: 20px 0;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      object-fit: cover;
+    }
+
+    .gallery-img {
+      max-width: 300px;       /* smaller gallery images */
+      height: auto;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      object-fit: cover;
+    }
+
+    /* Gallery section */
+    .gallery-section {
+      margin-top: 50px;
+      width: 100%;
+      height: auto;
+    }
+
+    .gallery-title {
+      font-size: 3vw;
+      color: #ff66cc;
+      margin-bottom: 20px;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  </style>
+
+  <!-- Ztext.js library -->
+  <script src="https://bennettfeely.com/ztext/js/ztext.min.js"></script>
+</head>
+<body>
+
+  <!-- Main Birthday Section -->
+  <div id="birthday" class="birthday-container" data-z data-z-depth="5em" data-z-speed="1.5" data-z-event="pointer">
+    <img src="image/cat.jpeg" alt="me" class="birthday-img z-text">
+    
+    <h1 class="z-text">⋆⋆Happy Birthday, Adammm !(˶ᵔ ᵕ ᵔ˶) </h1>
+    <h2 class="z-text">
+      donno what else to say but dang crazy do. i like to believe that we're destined to meet some people based on our choices so it's crazy thinking about how many choices i've made that led me to meet you. you're a rly cool person and i really, really REAAAAAaaAAALLY treasure you so pls dont die. 
+    </h2>
+    <h2 class="z-text"> rly rly rlyyy praying for your success, growth, murah rezeki, only for good vibes to surround you, and for you to get what you wish for ⋆ </h2>
+   
+  </div>
+
+  <!-- Gallery Section: Favorite Pictures of Him -->
+  <div class="gallery-section">
+    <h2 class="gallery-title z-text" data-z data-z-depth="1.5em" data-z-event="pointer">My Fav Pics of You!</h2>
+    <div class="gallery-container">
+      <img src="image/adam.jpg" alt="Adam " class="gallery-img">
+      <img src="image/adam2.jpg" alt="Adam 2" class="gallery-img">
+      <img src="image/adam3.jpg" alt="Adam 3" class="gallery-img">
+      <img src="image/adam4.jpg" alt="Adam 4" class="gallery-img">
+      <img src="image/adam5.jpg" alt="Adam 5" class="gallery-img">
+      <img src="image/adam6.jpg" alt="Adam 6" class="gallery-img">
+      <img src="image/adam7.jpg" alt="Adam 7" class="gallery-img">
+      <img src="image/adam8.jpg" alt="Adam 8" class="gallery-img">
+      <img src="image/adam9.jpg" alt="Adam 9" class="gallery-img">
+    </div>
+  </div>
+
+  <!-- Gallery Section: Favorite Pictures of Us -->
+  <div class="gallery-section">
+    <h2 class="gallery-title z-text" data-z data-z-depth="1.5em" data-z-event="pointer">My Fav Pics of Us lol hehe</h2>
+    <div class="gallery-container">
+      <img src="image/us1.jpg" alt="Us 1" class="gallery-img">
+      <img src="image/us2.jpg" alt="Us 2" class="gallery-img">
+      <img src="image/us3.jpg" alt="Us 3" class="gallery-img">
+      <img src="image/us4.jpg" alt="Us 3" class="gallery-img">
+      <img src="image/us5.jpg" alt="Us 3" class="gallery-img">
+    </div>
+  </div>
+    <p class="z-text">
+      This is my last wish (saya bosan asyik buat kerja so I played around with this hehe. cool kan *smirks*) ni prolly cam over and feels like im putting my heart on my sleeve. but, no love, however brief, is wasted right :'>' 
+    </p>
+  <script>
+    // Initialize Ztext.js on the main birthday container
+    new Ztextify('#birthday', {
+      depth: '5em',
+      layers: 1,
+      fade: true,
+      direction: 'both',
+      event: 'pointer',
+      perspective: '500px',
+      spring: 8
+    });
+
+    // Initialize Ztext.js on gallery titles
+    new Ztextify('.gallery-title', {
+      depth: '1.5em',
+      layers: 1,
+      fade: true,
+      direction: 'both',
+      event: 'pointer',
+      perspective: '500px',
+      spring: 8
+    });
+  </script>
+</body>
+</html>
